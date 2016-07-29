@@ -147,6 +147,14 @@
                                 <rect key="frame" x="227" y="449" width="39" height="30"/>
                                 <state key="normal" title="btn10"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmM-Cg-gcg">
+                                <rect key="frame" x="7" y="520" width="342" height="87"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="126"/>
+                                <state key="normal" title="back"/>
+                                <connections>
+                                    <action selector="back:" destination="A9f-ZH-zv5" eventType="touchUpInside" id="qs8-9o-oX2"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIE-In-wNg">
                                 <rect key="frame" x="216" y="494" width="60" height="30"/>
                                 <state key="normal" title="位移动画"/>

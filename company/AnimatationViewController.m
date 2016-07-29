@@ -37,31 +37,25 @@
 
 - (void)setAsycnBtn:(UIButton *)asycnBtn{
     
-    dispatch_async(dispatch_get_main_queue(), ^{
-           self.targetImageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://new-img2.ol-img.com/90x64/114/192/liPpATxvC0196.gif"]]];
-    });
-    
-    [UIView animateWithDuration:2.0 animations:^{
-        
-    } completion:^(BOOL finished) {
-        
-    }];
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- (IBAction)back:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -87,37 +81,20 @@
 //LoadimageView
 -(UIImage *)loadimage{
     
-    NSString *path =  [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSSystemDomainMask, YES).firstObject stringByAppendingString:@"/image"];
+    NSString *path =  [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSAllDomainsMask, YES).firstObject stringByAppendingString:@"/image.dpf"];
     NSFileManager *manage = [NSFileManager defaultManager];
     if (![manage fileExistsAtPath:path])//判读文件是否存在 如果不存在
     {
         NSLog(@"imageFile is not exist");
-  __block  BOOL isSuccess;
         dispatch_async(dispatch_get_main_queue(), ^{//异步下载图片 防止主线程阻塞
-//                UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://new-img2.ol-img.com/90x64/114/192/liPpATxvC0196.gif"]]];
             NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://new-img2.ol-img.com/90x64/114/192/liPpATxvC0196.gif"]];
-            isSuccess  = [data writeToFile:path atomically:YES];
-            if (isSuccess)
-            {
-                self.targetImageView.image= [UIImage imageWithData:data];
-            }else
-            {
-                UILabel *lab = [UILabel new];
-                lab.frame = CGRectMake((self.view.frame.size.width-60)/2.0, (self.view.frame.size.height-40)/2.0, 100, 40);
-                lab.text = @"图片写入失败";
-                lab.backgroundColor= [UIColor grayColor];
-                lab.alpha = 0.5;
-                [UIView animateWithDuration:2.0 animations:^{
-                     [self.view addSubview:lab];
-                } completion:^(BOOL finished) {
-                    [lab removeFromSuperview];
-                }];
-            }
+            NSMutableDictionary *dic = [NSMutableDictionary new];
+            dic[@"image"] = data;
+            [dic writeToFile:path atomically:YES];
         });
-    
-        
+    }else{
+        self.targetImageView.image = [UIImage imageWithData:[[NSDictionary dictionaryWithContentsOfFile:path] valueForKey:@"image"]];
     }
-    
     return [UIImage new];
 }
 
