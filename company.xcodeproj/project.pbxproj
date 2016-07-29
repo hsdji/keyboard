@@ -13,6 +13,7 @@
 		9624FE081D499CCC00AF19ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9624FE061D499CCC00AF19ED /* Main.storyboard */; };
 		9624FE0A1D499CCC00AF19ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9624FE091D499CCC00AF19ED /* Assets.xcassets */; };
 		9624FE0D1D499CCC00AF19ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9624FE0B1D499CCC00AF19ED /* LaunchScreen.storyboard */; };
+		964942E01D49E6F40059ACEE /* AnimatationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 964942DF1D49E6F40059ACEE /* AnimatationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		9624FE091D499CCC00AF19ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9624FE0C1D499CCC00AF19ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9624FE0E1D499CCC00AF19ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		964942DE1D49E6F40059ACEE /* AnimatationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatationViewController.h; sourceTree = "<group>"; };
+		964942DF1D49E6F40059ACEE /* AnimatationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,7 @@
 				9624FE011D499CCC00AF19ED /* AppDelegate.m */,
 				9624FE031D499CCC00AF19ED /* ViewController.h */,
 				9624FE041D499CCC00AF19ED /* ViewController.m */,
+				964942E11D49E6FA0059ACEE /* 动画 */,
 				9624FE061D499CCC00AF19ED /* Main.storyboard */,
 				9624FE091D499CCC00AF19ED /* Assets.xcassets */,
 				9624FE0B1D499CCC00AF19ED /* LaunchScreen.storyboard */,
@@ -77,6 +81,15 @@
 				9624FDFE1D499CCC00AF19ED /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		964942E11D49E6FA0059ACEE /* 动画 */ = {
+			isa = PBXGroup;
+			children = (
+				964942DE1D49E6F40059ACEE /* AnimatationViewController.h */,
+				964942DF1D49E6F40059ACEE /* AnimatationViewController.m */,
+			);
+			name = "动画";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +164,7 @@
 			files = (
 				9624FE051D499CCC00AF19ED /* ViewController.m in Sources */,
 				9624FE021D499CCC00AF19ED /* AppDelegate.m in Sources */,
+				964942E01D49E6F40059ACEE /* AnimatationViewController.m in Sources */,
 				9624FDFF1D499CCC00AF19ED /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +314,7 @@
 				9624FE131D499CCC00AF19ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
