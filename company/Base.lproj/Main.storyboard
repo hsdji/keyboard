@@ -109,43 +109,43 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psd-EU-v0l">
                                 <rect key="frame" x="15" y="274" width="90" height="30"/>
-                                <state key="normal" title="异步加载"/>
+                                <state key="normal" title="btn1"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFe-Sc-3xL">
-                                <rect key="frame" x="15" y="318" width="90" height="30"/>
-                                <state key="normal" title="边显示边加载"/>
+                                <rect key="frame" x="44" y="318" width="32" height="30"/>
+                                <state key="normal" title="btn2"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYb-ac-FHX">
-                                <rect key="frame" x="15" y="366" width="90" height="30"/>
-                                <state key="normal" title="下载完毕加载"/>
+                                <rect key="frame" x="41" y="366" width="39" height="30"/>
+                                <state key="normal" title="btn13"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUi-OU-16o">
                                 <rect key="frame" x="15" y="404" width="90" height="30"/>
-                                <state key="normal" title="主线程同步"/>
+                                <state key="normal" title="btn4"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSZ-UO-ZNZ">
                                 <rect key="frame" x="15" y="450" width="90" height="30"/>
-                                <state key="normal" title="主线程异步"/>
+                                <state key="normal" title="btn5"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxT-Co-ju9">
-                                <rect key="frame" x="216" y="274" width="60" height="30"/>
-                                <state key="normal" title="拉伸动画"/>
+                                <rect key="frame" x="230" y="274" width="33" height="30"/>
+                                <state key="normal" title="btn6"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syi-v2-Sqo">
-                                <rect key="frame" x="216" y="317" width="60" height="30"/>
-                                <state key="normal" title="位移动画"/>
+                                <rect key="frame" x="231" y="317" width="31" height="30"/>
+                                <state key="normal" title="btn7"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jgh-j2-0dh">
-                                <rect key="frame" x="216" y="366" width="60" height="30"/>
-                                <state key="normal" title="反转动画"/>
+                                <rect key="frame" x="230" y="366" width="33" height="30"/>
+                                <state key="normal" title="btn8"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utr-Xi-Hmd">
-                                <rect key="frame" x="216" y="404" width="60" height="30"/>
-                                <state key="normal" title="放大动画"/>
+                                <rect key="frame" x="230" y="404" width="33" height="30"/>
+                                <state key="normal" title="btn9"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="41B-s4-x64">
-                                <rect key="frame" x="209" y="449" width="75" height="30"/>
-                                <state key="normal" title="透明度动画"/>
+                                <rect key="frame" x="227" y="449" width="39" height="30"/>
+                                <state key="normal" title="btn10"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIE-In-wNg">
                                 <rect key="frame" x="216" y="494" width="60" height="30"/>
