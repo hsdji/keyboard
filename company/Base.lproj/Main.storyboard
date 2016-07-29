@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -72,6 +73,13 @@
                                     <segue destination="A9f-ZH-zv5" kind="show" id="cKr-93-saL"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uk4-la-EyS">
+                                <rect key="frame" x="186" y="423" width="60" height="30"/>
+                                <state key="normal" title="网络请求"/>
+                                <connections>
+                                    <segue destination="8ve-mr-x8y" kind="showDetail" id="ShK-W4-7Sx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -91,6 +99,77 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-43.5" y="409.5"/>
+        </scene>
+        <!--Netrequest View Controller-->
+        <scene sceneID="P6O-LD-zwq">
+            <objects>
+                <viewController id="8ve-mr-x8y" customClass="netrequestViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bYa-wa-wrL"/>
+                        <viewControllerLayoutGuide type="bottom" id="0LI-Nt-6Ki"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FXt-cC-ZvR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R8u-ph-qBx">
+                                <rect key="frame" x="8" y="537" width="332" height="32"/>
+                                <state key="normal" title="点一次加载一个"/>
+                                <connections>
+                                    <action selector="ontbyone:" destination="8ve-mr-x8y" eventType="touchUpInside" id="AZC-O5-84c"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tvC-Fi-JKg">
+                                <rect key="frame" x="-2" y="20" width="377" height="499"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7yu-yC-TOt">
+                                        <rect key="frame" x="8" y="8" width="165" height="126"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="165" id="j3n-G1-KLk"/>
+                                            <constraint firstAttribute="height" constant="126" id="xO3-52-f8R"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="7yu-yC-TOt" secondAttribute="bottom" constant="365" id="60g-6b-YzX"/>
+                                    <constraint firstAttribute="trailing" secondItem="7yu-yC-TOt" secondAttribute="trailing" constant="200" id="S9x-VZ-JlA"/>
+                                    <constraint firstItem="7yu-yC-TOt" firstAttribute="top" secondItem="tvC-Fi-JKg" secondAttribute="top" constant="8" id="eu3-Gb-A0K"/>
+                                    <constraint firstItem="7yu-yC-TOt" firstAttribute="leading" secondItem="tvC-Fi-JKg" secondAttribute="leading" constant="8" id="oWb-EM-29k"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yAn-72-Odf">
+                                <rect key="frame" x="8" y="577" width="332" height="32"/>
+                                <state key="normal" title="点一次加载全部"/>
+                                <connections>
+                                    <action selector="allLoad:" destination="8ve-mr-x8y" eventType="touchUpInside" id="rW0-bK-7nR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tvC-Fi-JKg" firstAttribute="leading" secondItem="FXt-cC-ZvR" secondAttribute="leadingMargin" constant="-18" id="3Jy-WT-xWt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yAn-72-Odf" secondAttribute="trailing" constant="19" id="5ct-lP-Vyr"/>
+                            <constraint firstAttribute="trailing" secondItem="tvC-Fi-JKg" secondAttribute="trailing" id="ET7-5O-J3g"/>
+                            <constraint firstItem="0LI-Nt-6Ki" firstAttribute="top" secondItem="yAn-72-Odf" secondAttribute="bottom" constant="58" id="Kyf-C0-zYX"/>
+                            <constraint firstItem="yAn-72-Odf" firstAttribute="leading" secondItem="FXt-cC-ZvR" secondAttribute="leadingMargin" constant="-8" id="SO1-Wi-Cjg"/>
+                            <constraint firstItem="R8u-ph-qBx" firstAttribute="top" secondItem="tvC-Fi-JKg" secondAttribute="bottom" constant="18" id="YR3-TY-vrD"/>
+                            <constraint firstItem="yAn-72-Odf" firstAttribute="top" secondItem="R8u-ph-qBx" secondAttribute="bottom" constant="8" id="ZfZ-GU-2x7"/>
+                            <constraint firstItem="0LI-Nt-6Ki" firstAttribute="top" secondItem="R8u-ph-qBx" secondAttribute="bottom" constant="98" id="gqe-Mv-5cX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="R8u-ph-qBx" secondAttribute="trailing" constant="19" id="hS7-DN-HNm"/>
+                            <constraint firstItem="R8u-ph-qBx" firstAttribute="leading" secondItem="FXt-cC-ZvR" secondAttribute="leadingMargin" constant="-8" id="iSM-f8-YtR"/>
+                            <constraint firstItem="tvC-Fi-JKg" firstAttribute="top" secondItem="bYa-wa-wrL" secondAttribute="bottom" id="kNC-PZ-QUN"/>
+                            <constraint firstAttribute="bottom" secondItem="tvC-Fi-JKg" secondAttribute="bottom" constant="148" id="xsG-PC-Y1m"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="imageView" destination="tvC-Fi-JKg" id="o6n-wW-t7o"/>
+                        <outlet property="seroview" destination="tvC-Fi-JKg" id="k5T-pj-O0g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0CE-ue-tPx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-43.5" y="1129.5"/>
         </scene>
         <!--Animatation View Controller-->
         <scene sceneID="RyK-ZY-94E">
@@ -185,7 +264,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y0w-n7-Hbv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="600.5" y="416.5"/>
+            <point key="canvasLocation" x="370.5" y="409.5"/>
         </scene>
     </scenes>
 </document>

@@ -35,9 +35,7 @@
 
 @implementation AnimatationViewController
 
-- (void)setAsycnBtn:(UIButton *)asycnBtn{
-    
-   }
+
 
 
 
@@ -58,30 +56,10 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //LoadimageView
 -(UIImage *)loadimage{
     
-    NSString *path =  [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSAllDomainsMask, YES).firstObject stringByAppendingString:@"/image.dpf"];
+    NSString *path =  [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSAllDomainsMask, YES).firstObject stringByAppendingString:@"/image.ehome"];
     NSFileManager *manage = [NSFileManager defaultManager];
     if (![manage fileExistsAtPath:path])//判读文件是否存在 如果不存在
     {
@@ -91,6 +69,7 @@
             NSMutableDictionary *dic = [NSMutableDictionary new];
             dic[@"image"] = data;
             [dic writeToFile:path atomically:YES];
+            self.targetImageView.image = [UIImage imageWithData:data] ;
         });
     }else{
         self.targetImageView.image = [UIImage imageWithData:[[NSDictionary dictionaryWithContentsOfFile:path] valueForKey:@"image"]];
@@ -115,15 +94,4 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end

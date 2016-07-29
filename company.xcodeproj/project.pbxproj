@@ -14,6 +14,7 @@
 		9624FE0A1D499CCC00AF19ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9624FE091D499CCC00AF19ED /* Assets.xcassets */; };
 		9624FE0D1D499CCC00AF19ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9624FE0B1D499CCC00AF19ED /* LaunchScreen.storyboard */; };
 		964942E01D49E6F40059ACEE /* AnimatationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 964942DF1D49E6F40059ACEE /* AnimatationViewController.m */; };
+		966C17D71D4B21F9004146AE /* netrequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 966C17D61D4B21F9004146AE /* netrequestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		9624FE0E1D499CCC00AF19ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		964942DE1D49E6F40059ACEE /* AnimatationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatationViewController.h; sourceTree = "<group>"; };
 		964942DF1D49E6F40059ACEE /* AnimatationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatationViewController.m; sourceTree = "<group>"; };
+		966C17D51D4B21F9004146AE /* netrequestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netrequestViewController.h; sourceTree = "<group>"; };
+		966C17D61D4B21F9004146AE /* netrequestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = netrequestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,7 @@
 				9624FE011D499CCC00AF19ED /* AppDelegate.m */,
 				9624FE031D499CCC00AF19ED /* ViewController.h */,
 				9624FE041D499CCC00AF19ED /* ViewController.m */,
+				966C17D41D4B209F004146AE /* 网络请求 */,
 				964942E11D49E6FA0059ACEE /* 动画 */,
 				9624FE061D499CCC00AF19ED /* Main.storyboard */,
 				9624FE091D499CCC00AF19ED /* Assets.xcassets */,
@@ -90,6 +94,15 @@
 				964942DF1D49E6F40059ACEE /* AnimatationViewController.m */,
 			);
 			name = "动画";
+			sourceTree = "<group>";
+		};
+		966C17D41D4B209F004146AE /* 网络请求 */ = {
+			isa = PBXGroup;
+			children = (
+				966C17D51D4B21F9004146AE /* netrequestViewController.h */,
+				966C17D61D4B21F9004146AE /* netrequestViewController.m */,
+			);
+			name = "网络请求";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9624FE051D499CCC00AF19ED /* ViewController.m in Sources */,
+				966C17D71D4B21F9004146AE /* netrequestViewController.m in Sources */,
 				9624FE021D499CCC00AF19ED /* AppDelegate.m in Sources */,
 				964942E01D49E6F40059ACEE /* AnimatationViewController.m in Sources */,
 				9624FDFF1D499CCC00AF19ED /* main.m in Sources */,
